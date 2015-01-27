@@ -1,0 +1,116 @@
+@import "_highlight"
+@import "_iconfont"
+
+body
+  font 12px/200% "Hiragino Sans GB","Microsoft YaHei","微软雅黑",Tahoma,Arial,"宋体"
+  color #333
+  background-color #E8E9DB
+
+body, div, ul, ol, li, pre, code, p, blockquote, th, td, figure
+  margin 0
+  padding 0
+  h1, h2, h3, h4, h5, h6
+    font-size 100%
+    font-weight normal
+
+a
+  color #999
+  text-decoration none
+  transition all 0.5s ease 0s
+
+pre, code
+  font-family Menlo,Monaco,Consolas,"Courier New",monospace
+
+.wrapper
+  width 850px
+  background-color #FFF
+  margin 0 auto
+  padding: 18px 0px 90px;
+  .header
+    position relative
+    border-bottom 1px solid #DDD
+    padding 0px 0px 40px
+    .nav
+      width 600px
+      margin 0px auto
+      text-align center
+      li
+        padding-bottom 8px
+        margin 0px 20px
+        display inline-block
+      a
+        display inline-block
+        white-space nowrap
+    .info
+      width 500px
+      margin 0px auto
+      text-align center
+      .avatar
+        text-align center
+        img
+          width 150px
+          height 150px
+          vertical-align middle
+          margin 32px 0px 12px
+          border-radius 50%
+          &:hover
+            opacity 0.7
+      .site-title
+        color #666
+        h1
+          a
+            font-size 16px
+            color #444
+            font-weight bold
+            line-height 28px
+            letter-spacing 1px
+  .main
+    width 500px
+    margin 0 auto
+    padding 30px 0px
+    .post-year-list
+      position relative
+      text-align center
+      font-size 18px
+      font-weight bold
+      margin 40px 0px 20px 0px
+    .post
+      position relative
+      margin 0px 0px 20px
+      .post-title
+        margin 0px 0px 16px
+        a
+          font-size 16px
+          color #333
+          line-height 24px
+          font-weight normal
+          text-decoration none
+      .icon
+        left -70px
+        position absolute
+        top 0
+        .iconfont
+          line-height 24px
+          display inline-block
+          width 52px
+          height 52px
+          margin-bottom 6px
+          font-size 24px
+      .post-date
+        position absolute
+        right -100px
+        top 0
+        color #999
+        display inline-block
+        width 70px
+        height 29px
+        text-align center
+        line-height 29px
+        border-top 2px solid #888
+        border-bottom 1px solid #BBB
+  .footer
+    width 500px
+    margin 0 auto
+    padding-top 45px
+    color #BBB
+    border-top 1px solid #DDD

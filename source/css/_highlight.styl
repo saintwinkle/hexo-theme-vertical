@@ -1,0 +1,81 @@
+/**
+* https://github.com/isagalaev/highlight.js
+* https://github.com/chriskempson/tomorrow-theme
+* Tomorrow Night Eighties
+*/
+
+// Color Configuration
+$tomorrow-comment = #999999
+$tomorrow-red = #F2777A
+$tomorrow-orange = #F99157
+$tomorrow-yellow = #FFCC66
+$tomorrow-green = #99CC99
+$tomorrow-aqua = #66CCCC
+$tomorrow-blue = #6699CC
+$tomorrow-purple = #CC99CC
+$tomorrow-background = #2D2D2D
+$tomorrow-foreground = #CCCCCC
+
+// Highlight
+.highlight
+  display block
+  overflow-x auto
+  background $tomorrow-background
+  color $tomorrow-foreground
+  padding 0.75em
+  .comment
+    color $tomorrow-comment
+  .variable,
+  .attribute,
+  .tag,
+  .regexp,
+  .ruby .constant,
+  .xml .tag .title,
+  .xml .pi,
+  .xml .doctype,
+  .html .doctype,
+  .css .id,
+  .css .class,
+  .css .pseudo
+    color $tomorrow-red
+  .number,
+  .preprocessor,
+  .pragma,
+  .built_in,
+  .literal,
+  .params,
+  .constant
+    color $tomorrow-orange
+  .ruby .class .title,
+  .css .rules .attribute
+    color $tomorrow-yellow
+  .string,
+  .value,
+  .inheritance,
+  .header,
+  .ruby .symbol,
+  .xml .cdata
+    color $tomorrow-green
+  .title,
+  .css .hexcolor
+    color $tomorrow-aqua
+  .function,
+  .python .decorator,
+  .python .title,
+  .ruby .function .title,
+  .ruby .title .keyword,
+  .perl .sub,
+  .javascript .title,
+  .coffeescript .title
+    color $tomorrow-blue
+  .keyword,
+  .javascript .function
+    color $tomorrow-purple
+  .coffeescript .javascript,
+  .javascript .xml,
+  .tex .formula,
+  .xml .javascript,
+  .xml .vbscript,
+  .xml .css,
+  .xml .cdata
+    opacity 0.5

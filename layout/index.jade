@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    include _partial/head
+  body
+    .wrapper
+      include _partial/header
+      .main
+        - var last = date(new Date(), 'YYYY')
+        - var flag = 0
+        - page.posts.each(function (post) {
+            - var year = post.date.year()
+            if (last == year)
+              if (flag == 0)
+                h1.post-year-list= year
+                - flag = 1
+            else
+              - last = year
+              h1.post-year-list= year
+            article.post
+              h2.post-title
+                a(href=post.path) #{post.title}
+              .icon
+                i.iconfont &#xf0130;
+              .post-date
+                = date(post.date, theme.date_format)
+        - })
+      include _partial/footer
