@@ -12,13 +12,13 @@ html
             - var year = post.date.year()
             if (last == year)
               if (flag == 0)
-                h1.post-year-list= year
+                h2.post-year-list= year
                 - flag = 1
             else
               - last = year
-              h1.post-year-list= year
+              h2.post-year-list= year
             article.post
-              h2.post-title
+              h4.post-title
                 a(href=post.path) #{post.title}
               .icon
                 i.iconfont &#xf0130;
