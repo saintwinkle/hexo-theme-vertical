@@ -1,34 +1,38 @@
 @import "_highlight"
-@import "_iconfont"
 
 body
-  font 13px/200% "Hiragino Sans GB","Microsoft YaHei","微软雅黑",Tahoma,Arial,"宋体"
+  font 14px/200% "Hiragino Sans GB","Microsoft YaHei","微软雅黑",Tahoma,Arial,"宋体"
   color #333
   background-color #E8E9DB
 
-body, div, ul, ol, li, pre, code, th, td, figure
+body, div, li, pre, code, th, td, figure
   margin 0
   padding 0
 
+ul, ol
+  padding-left 30px
+
 figure
   border-radius 5px
+  pre
+    line-height 20px
 
 blockquote
   margin 0
-  padding 0 10px
+  padding 1px 10px
   background-color #ddd
   border-left 3px solid #888
 
 a
   color #666
   text-decoration none
-  transition all 0.5s ease 0s
+  transition all 0.3s ease 0s
 
 pre, code
   font 12px/200% Menlo,Monaco,Consolas,"Courier New",monospace
 
 code
-  padding 3px
+  padding 2px
   background-color #ddd
   border 1px solid #ccc
   border-radius 5px
@@ -39,7 +43,6 @@ code
   margin 0 auto
   padding: 18px 0px 90px;
   .header
-    position relative
     border-bottom 1px solid #ddd
     padding 0px 0px 30px
     .nav
@@ -74,53 +77,41 @@ code
             font-size 16px
             color #444
             font-weight bold
-            line-height 28px
             letter-spacing 1px
   .main
-    width 500px
+    width 600px
     margin 0 auto
     padding 20px 0
     .post-year-list
-      position relative
       text-align center
       font-size 18px
       font-weight bold
       margin 40px 0px 30px
     .post
-      position relative
-      margin 0px 0px 20px
+      margin 0px 0px 10px
       .post-title
-        margin 0px 0px 16px
-        a
-          color #333
-          line-height 24px
-          text-decoration none
-      .icon
-        left -70px
-        position absolute
-        top 0
-        .iconfont
-          line-height 16px
-          display inline-block
-          width 52px
-          height 52px
-          margin-bottom 6px
-          font-size 16px
-      .post-date
-        position absolute
-        right -100px
-        top 0
-        color #999
-        display inline-block
-        width 70px
-        height 29px
+        color #333
+        line-height 24px
+        text-decoration none
+        &:hover
+          color #999
+      h1.post-title
         text-align center
-        line-height 29px
-        border-top 2px solid #888
-        border-bottom 1px solid #BBB
+      .post-date
+        float right
+        color #999
+      .post-content
+        a
+          color #999
+          border-bottom 1px dashed #999
+          &:hover
+            color #333
   .footer
-    width 500px
+    width 600px
+    color #999
+    font-size 13px
     margin 0 auto
     padding-top 45px
-    color #999
-    border-top 1px solid #DDD
+    border-top 1px solid #ddd
+    a:hover
+      color #999

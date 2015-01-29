@@ -18,11 +18,8 @@ html
               - last = year
               h2.post-year-list= year
             article.post
-              h4.post-title
-                a(href=post.path) #{post.title}
-              .icon
-                i.iconfont &#xf0130;
-              .post-date
+              a.post-title(href=post.path) #{post.title}
+              span.post-date
                 = date(post.date, theme.date_format)
         - })
       include _partial/footer

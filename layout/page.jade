@@ -9,10 +9,6 @@ html
         article.post
           h1.post-title
             a(href=page.path) #{page.title}
-          .icon
-            i.iconfont &#xf0130;
-          .post-date
-            = date(page.date, theme.date_format)
           .post-content
             != page.content
       include _partial/footer
