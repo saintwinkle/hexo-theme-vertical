@@ -1,7 +1,7 @@
 title: Vertical
 author: Twinkle
-discription: Another simple hexo theme
-date_format: MM-D HH:mm
+description: Another simple hexo theme
+date_format: MM-DD HH:mm
 
 menu:
   首页: /
