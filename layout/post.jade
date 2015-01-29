@@ -8,7 +8,7 @@ html
       .main
         article.post
           h1.post-title
-            a(href=page.path) #{page.title}
+            a(href=page.path)= page.title
           .post-content
             != page.content
       include _partial/footer

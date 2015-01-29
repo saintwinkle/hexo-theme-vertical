@@ -1,4 +1,13 @@
 title: 传说之树
-discription: 小码农一枚，正在努力去热爱生活 |ω･)ﾉ
 author: Twinkle
+discription: 小码农一枚，正在努力去热爱生活 |ω･)ﾉ
 date_format: MM-D HH:mm
+
+menu:
+  首页: /
+  关于: /about
+
+social:
+  weibo: 天然傲娇
+  github: saintwinkle
+  v2ex: twinkle

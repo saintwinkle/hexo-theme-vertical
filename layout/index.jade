@@ -18,7 +18,7 @@ html
               - last = year
               h2.post-year-list= year
             article.post
-              a.post-title(href=post.path) #{post.title}
+              a.post-title(href=post.path)= post.title
               span.post-date
                 = date(post.date, theme.date_format)
         - })
