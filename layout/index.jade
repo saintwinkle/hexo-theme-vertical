@@ -6,15 +6,10 @@ html
     .wrapper
       include _partial/header
       .main
-        - var last = date(new Date(), 'YYYY')
-        - var flag = 0
+        - var last
         - page.posts.each(function (post) {
             - var year = post.date.year()
-            if (last == year)
-              if (flag == 0)
-                h2.post-year-list= year
-                - flag = 1
-            else
+            if (last != year)
               - last = year
               h2.post-year-list= year
             article.post
