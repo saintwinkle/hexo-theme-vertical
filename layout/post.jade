@@ -7,8 +7,7 @@ html
       include _partial/header
       .main
         article.post
-          h1.post-title
-            a(href!= url_for(page.path))= page.title
+          h1.post-title= page.title
           .post-content
             != page.content
       include _partial/footer
