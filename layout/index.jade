@@ -10,6 +10,6 @@ html
             article.post
               a.post-title(href!= url_for(post.path))= post.title
               span.post-date
-                = date(post.date, 'YYYY MM-DD')
+                = date(post.date, 'YYYY-MM-DD')
         - })
       include _partial/footer
