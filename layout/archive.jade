@@ -6,10 +6,15 @@ html
     .wrapper
       include _partial/header
       .main
+        - var last
         - page.posts.each(function (post) {
+            - var year = post.date.year()
+            if (last != year)
+              - last = year
+              h2.post-year-list= year
             article.post
               a.post-title(href!= url_for(post.path))= post.title
               span.post-date
-                = date(post.date, 'YYYY MM-DD')
+                = date(post.date, 'MM-DD HH:mm')
         - })
       include _partial/footer

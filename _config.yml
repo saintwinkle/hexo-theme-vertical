@@ -1,10 +1,10 @@
 title: Vertical
 author: Twinkle
 description: Another simple hexo theme
-date_format: MM-DD HH:mm
 
 menu:
   首页: /
+  归档: /archives
   关于: /about
 
 social:
