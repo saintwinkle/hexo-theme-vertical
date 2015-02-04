@@ -12,4 +12,6 @@ html
               span.post-date
                 = date(post.date, 'YYYY-MM-DD')
         - })
+        nav.paginator
+          != paginator()
       include _partial/footer
