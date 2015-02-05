@@ -1,15 +1,15 @@
 title: Vertical
 author: Twinkle
 description: Another simple hexo theme
+email: 
 
 menu:
   首页: /
   归档: /archives
-  关于: /about
 
 social:
-  github: saintwinkle
-  weibo: 天然傲娇 #这里填写昵称即可
+  github: 
+  weibo: 
   v2ex: 
   twitter: 
   google_plus: 

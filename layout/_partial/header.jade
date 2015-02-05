@@ -21,7 +21,10 @@
   .info
     .avatar
       a(href='/')
-        img(src='/imgs/avatar.png')
+        if (theme.email)
+          img(src!=gravatar(theme.email, 150))
+        else
+          img(src='/imgs/avatar.png')
     .site-title
       h1
         a(href='/')= theme.title
